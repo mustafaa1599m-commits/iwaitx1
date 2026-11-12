@@ -40,7 +40,7 @@
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: rgba(0, 0, 0, 0.96);
+      ground: rgba(0, 0, 0, 0.96);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,7 +69,7 @@
     }
 
     /* =========================================
-       2. FULLSCREEN BACKGROUND VIDEO (بدون حواف)
+       2. FULLSCREEN GROUND VIDEO (بدون حواف)
        ========================================= */
     .bg-wrapper {
       position: fixed;
@@ -79,7 +79,7 @@
       height: 100vh;
       z-index: 0;
       overflow: hidden;
-      background: #000;
+      ground: #000;
     }
 
     #bg-video {
@@ -96,7 +96,7 @@
     .bg-vignette {
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 45%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.9) 100%);
+      ground: radial-gradient(circle at 50% 45%, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.65) 80%, rgba(0, 0, 0, 0.9) 100%);
       pointer-events: none;
     }
 
@@ -114,7 +114,7 @@
       top: 24px;
       left: 24px;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.06);
+      ground: rgba(255, 255, 255, 0.06);
       border: none;
       outline: none;
       width: 42px;
@@ -125,11 +125,11 @@
       justify-content: center;
       color: var(--text-primary);
       cursor: pointer;
-      transition: transform 0.25s ease, background 0.25s ease;
+      transition: transform 0.25s ease, ground 0.25s ease;
     }
 
     #mute-btn:hover {
-      background: rgba(255, 255, 255, 0.16);
+      ground: rgba(255, 255, 255, 0.16);
       transform: scale(1.08);
     }
 
@@ -177,7 +177,7 @@
       height: 120px;
       border-radius: 50%;
       padding: 3px;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7));
+      ground: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7));
       animation: avatarPulse 3.2s infinite ease-in-out;
       margin-bottom: 20px;
     }
@@ -193,7 +193,7 @@
       border-radius: 50%;
       object-fit: cover;
       display: block;
-      background: #111;
+      ground: #111;
     }
 
     .display-name {
@@ -243,7 +243,7 @@
       width: 52px;
       height: 52px;
       border-radius: 16px;
-      background: rgba(255, 255, 255, 0.06);
+      ground: rgba(255, 255, 255, 0.06);
       border: none;
       display: flex;
       align-items: center;
@@ -251,7 +251,7 @@
       color: #ffffff;
       text-decoration: none;
       transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                  background 0.28s ease,
+                  ground 0.28s ease,
                   box-shadow 0.28s ease;
     }
 
@@ -263,7 +263,7 @@
 
     .social-link:hover {
       transform: translateY(-5px) scale(1.12);
-      background: rgba(255, 255, 255, 0.18);
+      ground: rgba(255, 255, 255, 0.18);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
     }
 
@@ -294,7 +294,7 @@
       gap: 7px;
       padding: 5px 14px;
       border-radius: 999px;
-      background: rgba(12, 12, 16, 0.65);
+      ground: rgba(12, 12, 16, 0.65);
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.75rem;
       color: var(--text-secondary);
@@ -309,7 +309,7 @@
       width: 100%;
       padding: 12px 16px;
       border-radius: 20px;
-      background: rgba(10, 10, 14, 0.8);
+      ground: rgba(10, 10, 14, 0.8);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75);
       display: flex;
@@ -369,7 +369,7 @@
     }
 
     .ctrl-btn {
-      background: transparent;
+      ground: transparent;
       border: none;
       color: var(--text-secondary);
       cursor: pointer;
@@ -379,24 +379,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+      transition: color 0.2s ease, ground 0.2s ease, transform 0.2s ease;
     }
 
     .ctrl-btn:hover {
       color: #ffffff;
-      background: rgba(255, 255, 255, 0.1);
+      ground: rgba(255, 255, 255, 0.1);
       transform: scale(1.08);
     }
 
     .ctrl-btn.play-pause-btn {
       width: 38px;
       height: 38px;
-      background: rgba(255, 255, 255, 0.15);
+      ground: rgba(255, 255, 255, 0.15);
       color: #ffffff;
     }
 
     .ctrl-btn.play-pause-btn:hover {
-      background: rgba(255, 255, 255, 0.25);
+      ground: rgba(255, 255, 255, 0.25);
     }
 
     .ctrl-btn svg {
@@ -433,7 +433,7 @@
     .progress-track {
       width: 100%;
       height: 4px;
-      background: rgba(255, 255, 255, 0.15);
+      ground: rgba(255, 255, 255, 0.15);
       border-radius: 999px;
       overflow: hidden;
     }
@@ -441,7 +441,7 @@
     .progress-fill {
       height: 100%;
       width: 0%;
-      background: #ffffff;
+      ground: #ffffff;
       border-radius: 999px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
       transition: width 0.08s linear;
@@ -465,11 +465,11 @@
   </div>
 
   <!-- =========================================================
-       2. FULLSCREEN BACKGROUND VIDEO
+       2. FULLSCREEN GROUND VIDEO
        ========================================================= -->
   <div class="bg-wrapper">
     <video id="bg-video" autoplay muted loop playsinline>
-      <source src="background.m4a" type="video/mp4" />
+      <source src="background.mp4" type="video/mp4" />
     </video>
     <div class="bg-vignette"></div>
   </div>
